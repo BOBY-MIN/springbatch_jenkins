@@ -37,9 +37,9 @@ public class ChunkStepWrite implements ItemWriter<List<TestVo>> {
 			}
 		}
 
-//		if(ChunkStepRead.cnt == 4) {
-//			throw new Exception("rollback test");
-//		}
+		if(ChunkStepRead.cnt == 4) {
+			throw new Exception("rollback test");
+		}
 
 		List<TestVo> tempList = testService.selectList();
 

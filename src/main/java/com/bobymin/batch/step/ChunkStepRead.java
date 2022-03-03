@@ -32,7 +32,7 @@ public class ChunkStepRead implements ItemReader<List<TestVo>> {
 
 		cnt++;
 
-		if(cnt > 5) {
+		if(cnt > 8) {
 			return null;
 		}
 
