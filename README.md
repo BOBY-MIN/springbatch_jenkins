@@ -5,7 +5,7 @@
 
 ```
 $ gradle build
-$ java -jar ~.jar --spring.batch.job.names=myJob param=value
+$ java -jar batch-0.0.1-SNAPSHOT.jar --spring.batch.job.names=taskletJob exeDataTime=20220303
 ```
 
 <br>
