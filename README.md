@@ -13,6 +13,7 @@ $ java -jar batch-0.0.1-SNAPSHOT.jar --spring.batch.job.names=taskletJob exeData
 > spring batch 실행 참고
 
 * batch 실행 시 파라미터 값 동일한 경우 정상 수행 되지 않음. 실행 시 unique param 값 셋팅 필요
+* spring batch 에 spring-boot-start-web 관련 디펜던시 추가 시 hikari pool 종료되지 않음.
 
 <br>
 
