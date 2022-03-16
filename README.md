@@ -14,6 +14,9 @@ $ java -jar batch-0.0.1-SNAPSHOT.jar --spring.batch.job.names=taskletJob exeData
 
 * batch 실행 시 파라미터 값 동일한 경우 정상 수행 되지 않음. 실행 시 unique param 값 셋팅 필요
 * spring batch 에 spring-boot-start-web 관련 디펜던시 추가 시 hikari pool 종료되지 않음.
+* chunk 개수는 읽어온 데이터를 주어진 숫자로 분리하여 트랜잭션을 구분하는 것이 아닌, 합쳐서 트랜잭션을 구분함.
+	+ 예를들어 read에서 30건의 데이터를 읽고 chunk 로 3을 지정 시 90건씩 처리하여 커밋/롤백을 정함.
+
 
 <br>
 
